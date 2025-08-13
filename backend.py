@@ -6,7 +6,9 @@ ip = "0.0.0.0"
 port = 8000
 server_address = (ip, port)
 
-api = HTTPServer(server_address=server_address, RequestHandlerClass=SimpleHTTPRequestHandler)
+api = HTTPServer(
+    server_address=server_address, RequestHandlerClass=SimpleHTTPRequestHandler
+    )
 
 # Start the HTTP server.
 print("Listening for HTTP requests...")
